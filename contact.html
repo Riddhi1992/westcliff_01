@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Banff Community Center</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="contact">
+    <!-- This is the start of body part. -->
+    <div id="container">
+      <header>
+        <div>
+          <img class="img-logo" src="images/logo.jpg" alt="Banff logo" />
+          <h1 class="logo"><a href="index.html">Banff National Park</a></h1>
+        </div>
+        <!-- Main navigation -->
+        <div class="main-menu">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="activities.html">Things To Do</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- End of Main navigation. -->
+
+      <main>
+        <div class="image"></div>
+        <!-- Main content -->
+        <div class="first">
+          <h1>Contacting Us</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio
+            laudantium nihil repellendus doloremque reprehenderit, magnam dicta
+            laboriosam molestias labore ex fugit consequatur corrupti nisi magni
+            maiores tenetur sapiente possimus nemo? Veniam esse at tenetur
+            asperiores, consequuntur voluptate natus labore inventore
+            repellendus tempora? Harum qui obcaecati deleniti debitis, alias
+            natus suscipit
+          </p>
+          <h2>Phone:</h2>
+          <p>(800)BANFFAB</p>
+          <h2>Email:</h2>
+          <p>info@banffnationalpark.com</p>
+
+          <form action="/contact" method="POST">
+            <!-- This is the start of form. -->
+            <fieldset>
+              <legend>Contact Form</legend>
+              <div class="textbox">
+                <label>Enter your full name</label>
+                <input type="text" name="name" />
+                <label>Enter your email</label>
+                <input type="email" name="email" />
+                <label>Enter your Phone</label>
+                <input type="tel" name="phone" />
+              </div>
+              <div class="radios">
+                <br /><label>Select your Gender</label>
+                <input type="radio" name="gender" value="female" />Female
+                <input type="radio" name="gender" value="male" />Male<br />
+                <br /><label>How should we contact you?</label>
+                <input type="radio" name="contact" value="email" />Email
+                <input type="radio" name="contact" value="phone" />Phone
+              </div>
+              <div class="selectmenu">
+                <br /><label>Which activity you want to do?</label><br />
+                <select id="selection" onchange="selectOption()">
+                  <option value="Selection">-- Select --</option>
+                  <option value="S">Summer Activities</option>
+                  <option value="W">Winter Activities</option>
+                </select>
+              </div>
+              <div class="checkbox">
+                <div id="summerActivities" style="display: none">
+                  <br /><label class="title"
+                    >Which Summer activities you want to do?</label
+                  ><br />
+                  <input
+                    type="checkbox"
+                    id="riverrafting"
+                    name="riverrafting"
+                    value="riverrafting"
+                  />
+                  <label for="vehicle1"> River Rafting</label>
+                  <input
+                    type="checkbox"
+                    id="helicopter"
+                    name="helicopter"
+                    value="helicopter"
+                  />
+                  <label for="vehicle2"> Helicopter Ride</label>
+                  <input
+                    type="checkbox"
+                    id="wildlife"
+                    name="wildlife"
+                    value="wildlife"
+                  />
+                  <label for="vehicle3"> Wildlife Tour</label>
+                  <input
+                    type="checkbox"
+                    id="hiking"
+                    name="hiking"
+                    value="hiking"
+                  />
+                  <label for="vehicle1"> Hiking</label>
+                  <input
+                    type="checkbox"
+                    id="camping"
+                    name="camping"
+                    value="camping"
+                  />
+                  <label for="vehicle2"> Camping</label>
+                  <input
+                    type="checkbox"
+                    id="zipline"
+                    name="zipline"
+                    value="zipline"
+                  />
+                  <label for="vehicle3"> Zipline Tour</label><br />
+                </div>
+                <div id="winterActivities" style="display: none">
+                  <br /><label class="title"
+                    >Which Winter activities you want to do?</label
+                  ><br />
+                  <input
+                    type="checkbox"
+                    id="skiing"
+                    name="skiing"
+                    value="skiing"
+                  />
+                  <label for="vehicle1"> Ice Skiing</label>
+                  <input
+                    type="checkbox"
+                    id="helicopter"
+                    name="helicopter"
+                    value="helicopter"
+                  />
+                  <label for="vehicle2"> Helicopter Ride</label>
+                  <input
+                    type="checkbox"
+                    id="tubing"
+                    name="tubing"
+                    value="tubing"
+                  />
+                  <label for="vehicle3"> Snow Tubing</label>
+                  <input
+                    type="checkbox"
+                    id="fishing"
+                    name="fishing"
+                    value="fishing"
+                  />
+                  <label for="vehicle1"> Ice Fishing</label>
+                  <input type="checkbox" id="walk" name="walk" value="walk" />
+                  <label for="vehicle2"> Ice Walk</label>
+                  <input
+                    type="checkbox"
+                    id="mobiling"
+                    name="mobiling"
+                    value="mobiling"
+                  />
+                  <label for="vehicle3"> Snow Mobiling</label>
+                </div>
+              </div>
+              <div class="commentbox">
+                <br /><label>How did you hear about us:</label><br />
+                <textarea rows="5" cols="30"></textarea>
+              </div>
+              <div class="button">
+                <input type="submit" value="Submit" />
+              </div>
+            </fieldset>
+          </form>
+          <!-- Form ended here. -->
+        </div>
+      </main>
+      <!-- End of main content. -->
+
+      <footer>
+        <div id="nondisclaimer">
+          <div class="copy">
+            <p>&copy; Copyright 2020 :: banfnationalpark.com</p>
+          </div>
+          <div class="social">
+            <!--This is to show all social websites-->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
+
+        <div id="disclaimer">
+          <p>
+            This website is designed and created solely for educational purposes
+            only at Westcliff University. All contents are not intended for any
+            commercial gain or use.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="js/select.js"></script>
+  </body>
+  <!-- End of Body. -->
+</html>
