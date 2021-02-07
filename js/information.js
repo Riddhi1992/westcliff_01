@@ -45,10 +45,14 @@ var infoTag = ["Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus 
 
 var clickClose = "Click This to Close";
 
+// var openA = "<a href"
+
+
+
 // Create a loop to create 6 images starting with index of 0
 for (var i = 0; i < 10; i++) {
     fileNames.push("banff_" + (i + 1)); // Create image file name and store in the array
-    photos.push("<img src='images/" + fileNames[i] + ".jpg'>"); // Assemble file name into image element and store in an array
+    photos.push("<a href='#/' class='lightbox-toggle'>" + "<img src='images/" + fileNames[i] + ".jpg'>" + "</a>"); // Assemble file name into image element and store in an array
     openList.push("<li class='photo" + (i + 1) + "'>");
     image =
         openList[i] +
