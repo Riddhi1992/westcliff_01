@@ -26,10 +26,7 @@ $(document).ready(function(){
         //     var img = $('#album ul li:nth-child(3) img').clone(); //Duplicate DOM element
         //     $('.box').append(img); //Insert duplicated element in another element
         // }
-
-
     });
-
     /* Click to close lightbox */
     $('.close, .backdrop').click(function(){
         $('.backdrop').animate({'opacity':'0'}, 300, 'linear', function(){

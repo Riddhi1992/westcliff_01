@@ -68,7 +68,7 @@ for (var i = 0; i < 10; i++) {
         imageList.push(image); // Store (push) the assemble list codes into an array
 }
 // Display all six image codes stored in the array
-document.getElementById("album").innerHTML = imageList;
+document.getElementById("album").innerHTML = imageList.join("");
 
 function displayBox(num) {
     document.getElementById("infoBox").style.visibility = "visible";
@@ -81,4 +81,4 @@ document.getElementById("closeLink").addEventListener("click", closeBox);
 
 function closeBox() {
     document.getElementById("infoBox").style.visibility = "hidden";
-} 
+}
