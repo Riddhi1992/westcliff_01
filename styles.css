@@ -151,6 +151,36 @@ footer #nondisclaimer .social .fa-twitter {
   background: #55acee;
   color: #fff;
 }
+footer #nondisclaimer .social_activities {
+  padding: 2.5em;
+  margin-right: 9.25em;
+  float: right;
+}
+footer #nondisclaimer .social_activities .fa {
+  padding: 15px;
+  font-size: 15px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 4px;
+  border-radius: 50%;
+}
+footer #nondisclaimer .social_activities .fa:hover {
+  opacity: 0.7;
+}
+footer #nondisclaimer .social_activities .fa-facebook {
+  background: #3b5998;
+  color: #fff;
+}
+footer #nondisclaimer .social_activities .fa-instagram {
+  background: #125688;
+  color: #fff;
+}
+footer #nondisclaimer .social_activities .fa-twitter {
+  background: #55acee;
+  color: #fff;
+}
 
 table {
   width: 1000px;
